@@ -1,6 +1,7 @@
 package com.draft.figures;
 
-import java.awt.*;
+import java.awt.Graphics;
+import java.awt.Point;
 
 public class Triangle extends Figure {
 
@@ -24,10 +25,10 @@ public class Triangle extends Figure {
     /**
      * This creates Triangle object.
      *
-     * @param x0 coordinate of the left-top point of the triangle boundingbox
-     * @param y0 coordinate of the left-top point of the triangle boundingbox
-     * @param x1 coordinate of the right-bottom point of the triangle boundingbox
-     * @param y1 coordinate of the right-bottom point of the triangle boundingbox
+     * @param x0 left-top point of the triangle boundingbox
+     * @param y0 left-top point of the triangle boundingbox
+     * @param x1 right-bottom point of the triangle boundingbox
+     * @param y1 right-bottom point of the triangle boundingbox
      */
     public Triangle(int x0, int y0, int x1, int y1) {
         super(new Point(x0, y0), new Point(x1, y1));

@@ -1,6 +1,7 @@
 package com.draft.figures;
 
-import java.awt.*;
+import java.awt.Graphics;
+import java.awt.Point;
 
 public class Ellipse extends Figure {
 
@@ -21,10 +22,10 @@ public class Ellipse extends Figure {
     /**
      * This creates Ellipse object.
      *
-     * @param x0 coordinate of the left-top point of the ellipse bounding box
-     * @param y0 coordinate of the left-top point of the ellipse bounding box
-     * @param x1 coordinate of the right-bottom point of the ellipse bounding box
-     * @param y1 coordinate of the right-bottom point of the ellipse bounding box
+     * @param x0 left-top point of the ellipse bounding box
+     * @param y0 left-top point of the ellipse bounding box
+     * @param x1 right-bottom point of the ellipse bounding box
+     * @param y1 right-bottom point of the ellipse bounding box
      */
     public Ellipse(int x0, int y0, int x1, int y1) {
         super(new Point(x0, y0), new Point(x1, y1));

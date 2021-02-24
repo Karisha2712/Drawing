@@ -1,6 +1,7 @@
 package com.draft.figures;
 
-import java.awt.*;
+import java.awt.Graphics;
+import java.awt.Point;
 
 public class Rectangle extends Figure {
 
@@ -24,10 +25,10 @@ public class Rectangle extends Figure {
     /**
      * This creates Rectangle object.
      *
-     * @param x0 coordinate of the left-top point of the rectangle
-     * @param y0 coordinate of the left-top point of the rectangle
-     * @param x1 coordinate of the right-bottom point of the rectangle
-     * @param y1 coordinate of the right-bottom point of the rectangle
+     * @param x0 left-top point of the rectangle
+     * @param y0 left-top point of the rectangle
+     * @param x1 right-bottom point of the rectangle
+     * @param y1 right-bottom point of the rectangle
      */
     public Rectangle(int x0, int y0, int x1, int y1) {
         super(new Point(x0, y0), new Point(x1, y1));

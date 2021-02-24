@@ -1,6 +1,8 @@
 package com.draft.figures;
 
-import java.awt.*;
+import java.awt.Graphics;
+import java.awt.Point;
+
 
 public class Line extends Figure{
 
