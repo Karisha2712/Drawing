@@ -4,32 +4,56 @@ import java.awt.Point;
 
 public abstract class Figure {
 
+    /**
+     * Top left point of the figure.
+     */
     private Point startPoint;
+
+    /**
+     * Bottom right point of the figure.
+     */
     private Point endPoint;
 
-    public Figure(){
+    /**
+     * This creates Figure object.
+     */
+    public Figure() {
         startPoint = new Point();
         endPoint = new Point();
     }
 
-    public Figure(final Point startPoint, final Point endPoint){
-        this.startPoint = new Point(startPoint);
-        this.endPoint = new Point(endPoint);
+    /**
+     * This creates Figure object.
+     *
+     * @param sPoint start point value
+     * @param ePoint end point value
+     */
+    public Figure(final Point sPoint, final Point ePoint) {
+        this.startPoint = new Point(sPoint);
+        this.endPoint = new Point(ePoint);
     }
 
-    public void setStartPoint(final Point startPoint){
-        this.startPoint = startPoint;
+    /**
+     * This sets start point value.
+     * @param point start point value
+     */
+    public void setStartPoint(final Point point) {
+        this.startPoint = point;
     }
 
-    public Point getStartPoint(){
+    /**
+     * This returns start point value.
+     * @return start point value
+     */
+    public Point getStartPoint() {
         return startPoint;
     }
 
-    public void setEndPoint(final Point endPoint){
-        this.endPoint = endPoint;
+    public void setEndPoint(final Point point) {
+        this.endPoint = point;
     }
 
-    public Point getEndPoint(){
+    public Point getEndPoint() {
         return endPoint;
     }
 
