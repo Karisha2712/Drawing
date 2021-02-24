@@ -2,9 +2,9 @@ package com.draft.figures;
 
 import java.awt.*;
 
-public class Ellipse extends Figure{
+public class Ellipse extends Figure {
 
-    public Ellipse(){
+    public Ellipse() {
         super();
     }
 
@@ -12,7 +12,7 @@ public class Ellipse extends Figure{
      * This creates Ellipse object.
      *
      * @param startPoint left-top point of the ellipse bounding box
-     * @param endPoint right-bottom point of the ellipse bounding box
+     * @param endPoint   right-bottom point of the ellipse bounding box
      */
     public Ellipse(Point startPoint, Point endPoint) {
         super(startPoint, endPoint);
@@ -51,7 +51,7 @@ public class Ellipse extends Figure{
     }
 
     /**
-     * This draws an ellipse on the <code>graphics</code> object
+     * This draws an ellipse on the <code>graphics</code> object.
      *
      * @param graphics field for drawing
      */

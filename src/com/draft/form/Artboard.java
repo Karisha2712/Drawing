@@ -9,12 +9,12 @@ import java.awt.event.MouseMotionAdapter;
 public class Artboard extends JPanel {
 
 
-    private static com.draft.figures.Triangle line = null;
+    private static com.draft.figures.Rhombus line = null;
 
     /**
      * This creates Artboard object.
      */
-    public Artboard(){
+    public Artboard() {
         this.addMouseListener(new DrawingMouseAdapter());
         this.addMouseMotionListener(new DrawingMouseDrag());
     }
@@ -26,7 +26,7 @@ public class Artboard extends JPanel {
      */
     protected void paintComponent(final Graphics g) {
         super.paintComponent(g);
-        if (line!= null)  {
+        if (line != null) {
             line.draw(g);
         }
     }
@@ -43,7 +43,7 @@ public class Artboard extends JPanel {
          */
         @Override
         public void mousePressed(final MouseEvent e) {
-            line = new com.draft.figures.Triangle();
+            line = new com.draft.figures.Rhombus();
             line.setStartPoint(e.getPoint());
             line.setEndPoint(e.getPoint());
         }
@@ -54,14 +54,14 @@ public class Artboard extends JPanel {
          * @param e mouse event object
          */
         @Override
-        public void mouseReleased(final MouseEvent e){
+        public void mouseReleased(final MouseEvent e) {
             line.setEndPoint(e.getPoint());
             repaint();
         }
 
     }
 
-    private class DrawingMouseDrag extends MouseMotionAdapter{
+    private class DrawingMouseDrag extends MouseMotionAdapter {
 
         /**
          * This what happens when the mouse is dragged.
@@ -69,7 +69,7 @@ public class Artboard extends JPanel {
          * @param e mouse event object
          */
         @Override
-        public void mouseDragged(final MouseEvent e){
+        public void mouseDragged(final MouseEvent e) {
             line.setEndPoint(e.getPoint());
             repaint();
         }

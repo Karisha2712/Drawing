@@ -2,12 +2,12 @@ package com.draft.figures;
 
 import java.awt.*;
 
-public class Triangle extends Figure{
+public class Triangle extends Figure {
 
     /**
      * This creates Triangle object.
      */
-    public Triangle(){
+    public Triangle() {
         super();
     }
 
@@ -15,7 +15,7 @@ public class Triangle extends Figure{
      * This creates Triangle object.
      *
      * @param startPoint left-top point of the triangle boundingbox
-     * @param endPoint right-bottom point of the triangle boundingbox
+     * @param endPoint   right-bottom point of the triangle boundingbox
      */
     public Triangle(Point startPoint, Point endPoint) {
         super(startPoint, endPoint);
@@ -54,21 +54,23 @@ public class Triangle extends Figure{
     }
 
     /**
-     * This draws a triangle on the <code>graphics</code> object
+     * This draws a triangle on the <code>graphics</code> object.
      *
      * @param graphics field for drawing
      */
     @Override
     public void draw(final Graphics graphics) {
 
-        Point point1 = new Point();
-        Point point2 = new Point();
-        Point point3 = new Point();
+        Point point1 = new Point();                                 // left-bottom point
+        Point point2 = new Point();                                 // center-top point
+        Point point3 = new Point();                                 // right-bottom point
 
         point1.x = Math.min(getStartPoint().x, getEndPoint().x);
         point1.y = Math.max(getStartPoint().y, getEndPoint().y);
+
         point2.x = point1.x + this.getWidth() / 2;
         point2.y = point1.y - this.getHeight();
+
         point3.x = Math.max(getStartPoint().x, getEndPoint().x);
         point3.y = point1.y;
 

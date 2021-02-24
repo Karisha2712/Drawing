@@ -7,7 +7,7 @@ public class Rectangle extends Figure {
     /**
      * This creates Rectangle object.
      */
-    public Rectangle(){
+    public Rectangle() {
         super();
     }
 
@@ -15,7 +15,7 @@ public class Rectangle extends Figure {
      * This creates Rectangle object.
      *
      * @param startPoint left-top point of the rectangle
-     * @param endPoint right-bottom point of the rectangle
+     * @param endPoint   right-bottom point of the rectangle
      */
     public Rectangle(Point startPoint, Point endPoint) {
         super(startPoint, endPoint);
@@ -54,14 +54,14 @@ public class Rectangle extends Figure {
     }
 
     /**
-     * This draws a rectangle on the <code>graphics</code> object
+     * This draws a rectangle on the <code>graphics</code> object.
      *
      * @param graphics field for drawing
      */
     @Override
     public void draw(final Graphics graphics) {
         graphics.drawRect(Math.min(getStartPoint().x, getEndPoint().x),
-                          Math.min(getStartPoint().y, getEndPoint().y),
-                          getWidth(), getHeight());
+                Math.min(getStartPoint().y, getEndPoint().y),
+                getWidth(), getHeight());
     }
 }
