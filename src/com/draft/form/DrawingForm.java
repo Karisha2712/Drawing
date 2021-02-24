@@ -11,16 +11,27 @@ public class DrawingForm extends JFrame{
     private JButton button2;
     private JButton button3;
     private JPanel bPanel;
-    private Artboard artboard;
 
+    /**
+     * This creates frame.
+     */
     public DrawingForm() {
-        this.setTitle("Artboard");
+        Artboard artboard;
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
-        this.setSize(800, 500);
+        setFormSize();
         artboard = new Artboard();
         this.add(artboard);
         this.setVisible(true);
+    }
+
+    /**
+     * This set size to the frame.
+     */
+    private void setFormSize(){
+        int windowWidth = this.getToolkit().getScreenSize().width;
+        int windowHeight = this.getToolkit().getScreenSize().height;
+        this.setSize(windowWidth, windowHeight);
     }
 
 }

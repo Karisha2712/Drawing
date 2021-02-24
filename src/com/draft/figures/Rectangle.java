@@ -60,7 +60,8 @@ public class Rectangle extends Figure {
      */
     @Override
     public void draw(final Graphics graphics) {
-        graphics.drawRect(getStartPoint().x, getStartPoint().y,
+        graphics.drawRect(Math.min(getStartPoint().x, getEndPoint().x),
+                          Math.min(getStartPoint().y, getEndPoint().y),
                           getWidth(), getHeight());
     }
 }
