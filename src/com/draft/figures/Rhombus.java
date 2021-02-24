@@ -64,10 +64,10 @@ public class Rhombus extends Figure {
     @Override
     public void draw(final Graphics graphics) {
 
-        Point point1 = new Point();                                 // bottom point
-        Point point2 = new Point();                                 // left point
-        Point point3 = new Point();                                 // top point
-        Point point4 = new Point();                                 // right point
+        Point point1 = new Point();            // bottom point
+        Point point2 = new Point();            // left point
+        Point point3 = new Point();            // top point
+        Point point4 = new Point();            // right point
 
         point1.x = Math.min(getStartPoint().x, getEndPoint().x)
                 + this.getWidth() / 2;

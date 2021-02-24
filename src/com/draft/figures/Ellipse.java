@@ -59,7 +59,7 @@ public class Ellipse extends Figure {
      * @param graphics field for drawing
      */
     @Override
-    public void draw(Graphics graphics) {
+    public void draw(final Graphics graphics) {
         graphics.drawOval(Math.min(getStartPoint().x, getEndPoint().x),
                 Math.min(getStartPoint().y, getEndPoint().y),
                 getWidth(), getHeight());
