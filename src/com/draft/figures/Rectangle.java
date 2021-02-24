@@ -6,6 +6,13 @@ public class Rectangle extends Figure {
 
     /**
      * This creates Rectangle object.
+     */
+    public Rectangle(){
+        super();
+    }
+
+    /**
+     * This creates Rectangle object.
      *
      * @param startPoint left-top point of the rectangle
      * @param endPoint right-bottom point of the rectangle

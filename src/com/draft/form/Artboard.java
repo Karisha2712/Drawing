@@ -8,15 +8,15 @@ import java.awt.event.MouseMotionAdapter;
 
 public class Artboard extends JPanel {
 
-    private static com.draft.figures.Rectangle rect;
+    private static com.draft.figures.Rectangle rect = null;
 
     public Artboard(){
-        super();
         this.addMouseListener(new DrawingMouseAdapter());
         this.addMouseMotionListener(new DrawingMouseDrag());
     }
 
     protected void paintComponent(final Graphics g) {
+        super.paintComponent(g);
         if (rect!= null)  {
             rect.draw(g);
         }
@@ -26,7 +26,9 @@ public class Artboard extends JPanel {
 
         @Override
         public void mousePressed(final MouseEvent e) {
-            rect = new com.draft.figures.Rectangle(e.getPoint(), e.getPoint());
+            rect = new com.draft.figures.Rectangle();
+            rect.setStartPoint(e.getPoint());
+            rect.setEndPoint(e.getPoint());
         }
 
         @Override
