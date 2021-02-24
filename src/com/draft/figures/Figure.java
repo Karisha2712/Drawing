@@ -1,16 +1,17 @@
 package com.draft.figures;
 
 import java.awt.Point;
+import java.awt.Graphics;
 
 public abstract class Figure {
 
     /**
-     * Top left point of the figure.
+     * Top-left point of the figure.
      */
     private Point startPoint;
 
     /**
-     * Bottom right point of the figure.
+     * Bottom-right point of the figure.
      */
     private Point endPoint;
 
@@ -35,6 +36,7 @@ public abstract class Figure {
 
     /**
      * This sets start point value.
+     *
      * @param point start point value
      */
     public void setStartPoint(final Point point) {
@@ -43,20 +45,36 @@ public abstract class Figure {
 
     /**
      * This returns start point value.
+     *
      * @return start point value
      */
     public Point getStartPoint() {
         return startPoint;
     }
 
+    /**
+     * This sets end point value.
+     *
+     * @param point end point value
+     */
     public void setEndPoint(final Point point) {
         this.endPoint = point;
     }
 
+    /**
+     * This returns end point value.
+     *
+     * @return end point value
+     */
     public Point getEndPoint() {
         return endPoint;
     }
 
-    public abstract void draw();
+    /**
+     * Abstract method for drawing figures.
+     *
+     * @param graphics field for drawing
+     */
+    public abstract void draw(Graphics graphics);
 
 }
