@@ -29,7 +29,8 @@ public abstract class Figure {
      * @param sPoint start point value
      * @param ePoint end point value
      */
-    public Figure(final Point sPoint, final Point ePoint) {
+    public Figure(final Point sPoint,
+                  final Point ePoint) {
         this.startPoint = new Point(sPoint);
         this.endPoint = new Point(ePoint);
     }
@@ -75,6 +76,6 @@ public abstract class Figure {
      *
      * @param graphics field for drawing
      */
-    public abstract void draw(Graphics graphics);
+    public abstract void draw(final Graphics graphics);
 
 }

@@ -15,7 +15,8 @@ public class Ellipse extends Figure {
      * @param startPoint left-top point of the ellipse bounding box
      * @param endPoint   right-bottom point of the ellipse bounding box
      */
-    public Ellipse(Point startPoint, Point endPoint) {
+    public Ellipse(final Point startPoint,
+                   final Point endPoint) {
         super(startPoint, endPoint);
     }
 
@@ -27,7 +28,8 @@ public class Ellipse extends Figure {
      * @param x1 right-bottom point of the ellipse bounding box
      * @param y1 right-bottom point of the ellipse bounding box
      */
-    public Ellipse(int x0, int y0, int x1, int y1) {
+    public Ellipse(final int x0, final int y0,
+                   final int x1, final int y1) {
         super(new Point(x0, y0), new Point(x1, y1));
     }
 

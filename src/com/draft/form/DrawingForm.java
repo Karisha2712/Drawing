@@ -5,8 +5,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 
-
-public class DrawingForm extends JFrame{
+public class DrawingForm extends JFrame {
     private JPanel mainPanel;
     private JButton btnRect;
     private JButton button2;
@@ -29,7 +28,7 @@ public class DrawingForm extends JFrame{
     /**
      * This set size to the frame.
      */
-    private void setFormSize(){
+    private void setFormSize() {
         int windowWidth = this.getToolkit().getScreenSize().width;
         int windowHeight = this.getToolkit().getScreenSize().height;
         this.setSize(windowWidth, windowHeight);

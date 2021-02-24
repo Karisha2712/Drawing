@@ -30,7 +30,8 @@ public class Triangle extends Figure {
      * @param x1 right-bottom point of the triangle boundingbox
      * @param y1 right-bottom point of the triangle boundingbox
      */
-    public Triangle(int x0, int y0, int x1, int y1) {
+    public Triangle(final int x0, final int y0,
+                    final int x1, final int y1) {
         super(new Point(x0, y0), new Point(x1, y1));
     }
 

@@ -18,7 +18,8 @@ public class Rhombus extends Figure {
      * @param startPoint left-top point of the rhombus boundingbox
      * @param endPoint   right-bottom point of the rhombus boundingbox
      */
-    public Rhombus(Point startPoint, Point endPoint) {
+    public Rhombus(final Point startPoint,
+                   final Point endPoint) {
         super(startPoint, endPoint);
     }
 
@@ -30,7 +31,8 @@ public class Rhombus extends Figure {
      * @param x1 right-bottom point of the rhombus boundingbox
      * @param y1 right-bottom point of the rhombus boundingbox
      */
-    public Rhombus(int x0, int y0, int x1, int y1) {
+    public Rhombus(final int x0, final int y0,
+                   final int x1, final int y1) {
         super(new Point(x0, y0), new Point(x1, y1));
     }
 

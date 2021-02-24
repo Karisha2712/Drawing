@@ -18,7 +18,8 @@ public class Rectangle extends Figure {
      * @param startPoint left-top point of the rectangle
      * @param endPoint   right-bottom point of the rectangle
      */
-    public Rectangle(Point startPoint, Point endPoint) {
+    public Rectangle(final Point startPoint,
+                     final Point endPoint) {
         super(startPoint, endPoint);
     }
 
@@ -30,7 +31,8 @@ public class Rectangle extends Figure {
      * @param x1 right-bottom point of the rectangle
      * @param y1 right-bottom point of the rectangle
      */
-    public Rectangle(int x0, int y0, int x1, int y1) {
+    public Rectangle(final int x0, final int y0,
+                     final int x1, final int y1) {
         super(new Point(x0, y0), new Point(x1, y1));
     }
 
