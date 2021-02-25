@@ -20,7 +20,7 @@ public class Artboard extends JPanel {
     /**
      * Value of current figure type.
      */
-    private figureType currentFigureType = figureType.DEFAULT;
+    private FigureType currentFigureType = FigureType.DEFAULT;
 
     /**
      * Value fot current figure.
@@ -46,7 +46,7 @@ public class Artboard extends JPanel {
      *
      * @param type type of figure
      */
-    public void setFigureType(final figureType type) {
+    public void setFigureType(final FigureType type) {
         this.currentFigureType = type;
     }
 
@@ -56,7 +56,7 @@ public class Artboard extends JPanel {
      * @param type type of figure
      * @return figure object
      */
-    private Figure setFigure(final figureType type) {
+    private Figure setFigure(final FigureType type) {
         switch (type) {
             case RECTANGLE -> {
                 return new Rectangle();

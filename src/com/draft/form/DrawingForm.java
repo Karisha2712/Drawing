@@ -54,7 +54,7 @@ public class DrawingForm extends JFrame {
     public DrawingForm() {
         setFormSize();
         artboard = new Artboard();
-        AddButtonsListeners();
+        addButtonsListeners();
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
         this.add(artboard);
@@ -75,23 +75,26 @@ public class DrawingForm extends JFrame {
     /**
      * This adds listeners for buttons.
      */
-    private void AddButtonsListeners() {
+    private void addButtonsListeners() {
         rectangleButton.addActionListener(
-                this.setButtonListener(figureType.RECTANGLE));
+                this.setButtonListener(FigureType.RECTANGLE));
         ellipseButton.addActionListener(
-                this.setButtonListener(figureType.ELLIPSE));
+                this.setButtonListener(FigureType.ELLIPSE));
         lineButton.addActionListener(
-                this.setButtonListener(figureType.LINE));
+                this.setButtonListener(FigureType.LINE));
         triangleButton.addActionListener(
-                this.setButtonListener(figureType.TRIANGLE));
+                this.setButtonListener(FigureType.TRIANGLE));
         rhombusButton.addActionListener(
-                this.setButtonListener(figureType.RHOMBUS));
+                this.setButtonListener(FigureType.RHOMBUS));
     }
 
     /**
      * This sets listeners for buttons.
+     *
+     * @param type type of chosen figure
+     * @return action
      */
-    private ActionListener setButtonListener(final figureType type) {
+    private ActionListener setButtonListener(final FigureType type) {
         return e -> artboard.setFigureType(type);
     }
 }

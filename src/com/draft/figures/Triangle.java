@@ -64,9 +64,9 @@ public class Triangle extends Figure {
     @Override
     public void draw(final Graphics graphics) {
 
-        Point point1 = new Point();                                 // left-bottom point
-        Point point2 = new Point();                                 // center-top point
-        Point point3 = new Point();                                 // right-bottom point
+        Point point1 = new Point();      // left-bottom point
+        Point point2 = new Point();      // center-top point
+        Point point3 = new Point();      // right-bottom point
 
         point1.x = Math.min(getStartPoint().x,
                 getEndPoint().x);

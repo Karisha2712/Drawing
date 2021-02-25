@@ -3,7 +3,7 @@ package com.draft.form;
 /**
  * Enum of figure types.
  */
-public enum figureType {
+public enum FigureType {
 
     /**
      * Constant for rectangle.

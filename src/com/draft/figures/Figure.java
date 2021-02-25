@@ -76,6 +76,6 @@ public abstract class Figure {
      *
      * @param graphics field for drawing
      */
-    public abstract void draw(final Graphics graphics);
+    public abstract void draw(Graphics graphics);
 
 }
