@@ -1,4 +1,4 @@
 /**
- * Package for Frame class and it's components.
+ * Package for Frame and it's components.
  */
 package com.draft.form;
