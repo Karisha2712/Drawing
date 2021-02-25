@@ -18,7 +18,8 @@ public class Triangle extends Figure {
      * @param startPoint left-top point of the triangle boundingbox
      * @param endPoint   right-bottom point of the triangle boundingbox
      */
-    public Triangle(Point startPoint, Point endPoint) {
+    public Triangle(final Point startPoint,
+                    final Point endPoint) {
         super(startPoint, endPoint);
     }
 
@@ -67,18 +68,24 @@ public class Triangle extends Figure {
         Point point2 = new Point();                                 // center-top point
         Point point3 = new Point();                                 // right-bottom point
 
-        point1.x = Math.min(getStartPoint().x, getEndPoint().x);
-        point1.y = Math.max(getStartPoint().y, getEndPoint().y);
+        point1.x = Math.min(getStartPoint().x,
+                getEndPoint().x);
+        point1.y = Math.max(getStartPoint().y,
+                getEndPoint().y);
 
         point2.x = point1.x + this.getWidth() / 2;
         point2.y = point1.y - this.getHeight();
 
-        point3.x = Math.max(getStartPoint().x, getEndPoint().x);
+        point3.x = Math.max(getStartPoint().x,
+                getEndPoint().x);
         point3.y = point1.y;
 
-        graphics.drawLine(point1.x, point1.y, point2.x, point2.y);
-        graphics.drawLine(point2.x, point2.y, point3.x, point3.y);
-        graphics.drawLine(point3.x, point3.y, point1.x, point1.y);
+        graphics.drawLine(point1.x, point1.y,
+                point2.x, point2.y);
+        graphics.drawLine(point2.x, point2.y,
+                point3.x, point3.y);
+        graphics.drawLine(point3.x, point3.y,
+                point1.x, point1.y);
 
     }
 }
