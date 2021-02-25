@@ -3,10 +3,10 @@ package com.draft;
 import com.draft.form.DrawingForm;
 
 
-public class Main {
+public final class Main {
 
     /**
-     * Method for avoiding instantiation.
+     * Method for avoiding creation objects.
      */
     private Main() {
     }

@@ -5,6 +5,9 @@ import java.awt.Point;
 
 public class Ellipse extends Figure {
 
+    /**
+     * This creates Ellipse object.
+     */
     public Ellipse() {
         super();
     }

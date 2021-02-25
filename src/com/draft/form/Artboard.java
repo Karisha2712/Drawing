@@ -122,7 +122,8 @@ public class Artboard extends JPanel {
         @Override
         public void mouseReleased(final MouseEvent e) {
             super.mouseReleased(e);
-            if (figure != null) {
+            if ((figure != null)
+                    && (!figure.getStartPoint().equals(figure.getEndPoint()))) {
                 figure.setEndPoint(e.getPoint());
                 figures.add(figure);
                 repaint();

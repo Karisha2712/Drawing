@@ -58,7 +58,6 @@ public class DrawingForm extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
         this.add(artboard);
-        this.add(buttonsPanel);
         this.setVisible(true);
 
     }
