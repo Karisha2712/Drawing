@@ -24,18 +24,6 @@ public abstract class Figure {
     }
 
     /**
-     * This creates Figure object.
-     *
-     * @param sPoint start point value
-     * @param ePoint end point value
-     */
-    public Figure(final Point sPoint,
-                  final Point ePoint) {
-        this.startPoint = new Point(sPoint);
-        this.endPoint = new Point(ePoint);
-    }
-
-    /**
      * This sets start point value.
      *
      * @param point start point value

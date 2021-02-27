@@ -55,10 +55,10 @@ public class DrawingForm extends JFrame {
         setFormSize();
         artboard = new Artboard();
         addButtonsListeners();
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setContentPane(mainPanel);
-        this.add(artboard);
-        this.setVisible(true);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setContentPane(mainPanel);
+        add(artboard);
+        setVisible(true);
 
     }
 
@@ -66,9 +66,9 @@ public class DrawingForm extends JFrame {
      * This set size to the frame.
      */
     private void setFormSize() {
-        int windowWidth = this.getToolkit().getScreenSize().width;
-        int windowHeight = this.getToolkit().getScreenSize().height;
-        this.setSize(windowWidth, windowHeight);
+        int windowWidth = getToolkit().getScreenSize().width;
+        int windowHeight = getToolkit().getScreenSize().height;
+        setSize(windowWidth, windowHeight);
     }
 
     /**
@@ -76,15 +76,15 @@ public class DrawingForm extends JFrame {
      */
     private void addButtonsListeners() {
         rectangleButton.addActionListener(
-                this.setButtonListener(FigureType.RECTANGLE));
+                setButtonListener(FigureType.RECTANGLE));
         ellipseButton.addActionListener(
-                this.setButtonListener(FigureType.ELLIPSE));
+                setButtonListener(FigureType.ELLIPSE));
         lineButton.addActionListener(
-                this.setButtonListener(FigureType.LINE));
+                setButtonListener(FigureType.LINE));
         triangleButton.addActionListener(
-                this.setButtonListener(FigureType.TRIANGLE));
+                setButtonListener(FigureType.TRIANGLE));
         rhombusButton.addActionListener(
-                this.setButtonListener(FigureType.RHOMBUS));
+                setButtonListener(FigureType.RHOMBUS));
     }
 
     /**
